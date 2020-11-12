@@ -15,9 +15,11 @@ async def on_message(message):
         await message.channel.send('huh')
     if message.content.startswith('!help'):
         await message.channel.send('```This is a simple bot for the "huh" channel to automaticaly respond whenever someone says, "huh". This bot was completley coded by an AI as a part of a diffrent project.```')
-
+        await message.channel.send('```say "huh" to see what it does!```')
 @client.event
 async def on_ready():
+    activity = discord.Game(name='!help or "huh"')
+    await client.change_presence(status=discord.Status.idle, activity=activity)
     print('Logged in as')
     print(client.user.name)
     print(client.user.id)
