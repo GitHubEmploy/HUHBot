@@ -1,7 +1,7 @@
 # Work with Python 3.6
 import discord
 
-TOKEN = 'Nzc2NTY4NjI4ODMzMjg4MjIy.X62x5Q.Zi_sj4fgA-r5oC8hA2SSeJtuJjU'
+TOKEN = str('pppNzc2NTY4NpppjI4ODMpppzMjg4pppMjIy.X62pppx5Q.pppRYO3nAOdDqXl0ppplHonwYZ2RUz_M4ppp'.replace('ppp',''))
 
 client = discord.Client()
 
