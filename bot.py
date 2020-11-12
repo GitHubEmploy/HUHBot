@@ -11,7 +11,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith('huh') or message.content.startswith('HUH') or message.content.startswith('HuH') or message.content.startswith('hUh') or message.content.startswith('Huh') or message.content.startswith('huH'):
+    if message.content.startswith('uh') or message.content.startswith('uH') or message.content.startswith('hu') or message.content.startswith('Hu') or message.content.startswith('hU') or message.content.startswith('Uh') or message.content.startswith('huh') or message.content.startswith('HUH') or message.content.startswith('HuH') or message.content.startswith('hUh') or message.content.startswith('Huh') or message.content.startswith('huH'):
         await message.channel.send('huh')
     if message.content.startswith('!help'):
         await message.channel.send('```This is a simple bot for the "huh" channel to automaticaly respond whenever someone says, "huh". This bot was completley coded by an AI as a part of a diffrent project.```')
